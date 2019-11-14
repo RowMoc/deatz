@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  FourthViewController.swift
 //  Deatz
 //
 //  Created by Rowan Mockler on 2019/11/13.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FourthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

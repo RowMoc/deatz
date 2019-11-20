@@ -15,7 +15,7 @@
 		204AA757237CE29200ADFC11 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204AA755237CE29200ADFC11 /* SearchViewController.swift */; };
 		204AA75B237CE2B800ADFC11 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204AA759237CE2B800ADFC11 /* CalendarViewController.swift */; };
 		204AA75F237CE2CB00ADFC11 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204AA75D237CE2CB00ADFC11 /* HomeScreenViewController.swift */; };
-		C14086762384CF6B0040934E /* deatzz 2.png in Resources */ = {isa = PBXBuildFile; fileRef = C14086752384CF6B0040934E /* deatzz 2.png */; };
+		C14086762384CF6B0040934E /* deatz.png in Resources */ = {isa = PBXBuildFile; fileRef = C14086752384CF6B0040934E /* deatz.png */; };
 		C1F21B9D238510B600090A78 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F21B9C238510B600090A78 /* GroupsViewController.swift */; };
 		C1F21B9F23851E8C00090A78 /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F21B9E23851E8C00090A78 /* NavBar.swift */; };
 /* End PBXBuildFile section */
@@ -31,7 +31,7 @@
 		204AA755237CE29200ADFC11 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		204AA759237CE2B800ADFC11 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		204AA75D237CE2CB00ADFC11 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
-		C14086752384CF6B0040934E /* deatzz 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deatzz 2.png"; sourceTree = "<group>"; };
+		C14086752384CF6B0040934E /* deatz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deatz.png; sourceTree = "<group>"; };
 		C1F21B9C238510B600090A78 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		C1F21B9E23851E8C00090A78 /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,7 +73,7 @@
 				204AA742237CDF0E00ADFC11 /* Assets.xcassets */,
 				204AA744237CDF0E00ADFC11 /* LaunchScreen.storyboard */,
 				204AA747237CDF0E00ADFC11 /* Info.plist */,
-				C14086752384CF6B0040934E /* deatzz 2.png */,
+				C14086752384CF6B0040934E /* deatz.png */,
 			);
 			path = Deatz;
 			sourceTree = "<group>";
@@ -151,7 +151,7 @@
 				204AA746237CDF0E00ADFC11 /* LaunchScreen.storyboard in Resources */,
 				204AA743237CDF0E00ADFC11 /* Assets.xcassets in Resources */,
 				204AA741237CDF0D00ADFC11 /* Main.storyboard in Resources */,
-				C14086762384CF6B0040934E /* deatzz 2.png in Resources */,
+				C14086762384CF6B0040934E /* deatz.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

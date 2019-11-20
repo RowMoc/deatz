@@ -1,29 +1,23 @@
 //
-//  ThirdViewController.swift
+//  NavController.swift
 //  Deatz
 //
-//  Created by Rowan Mockler on 2019/11/13.
+//  Created by Elina Thadhani on 11/20/19.
 //  Copyright © 2019 Deatz. All rights reserved.
 //
 
 import UIKit
 
-class SearchViewController: UIViewController {
-//properties
-    @IBOutlet weak var findLabel: UILabel!
-    
-    @IBOutlet weak var searchTextField: UITextField!
-    
+class NavController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
+        self.navigationController?.navigationBar.backIndicatorImage = UIImage(contentsOfFile: "homeicon")
+
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func searchButton(_ sender: UIButton) {
-    }
     
+
     /*
     // MARK: - Navigation
 

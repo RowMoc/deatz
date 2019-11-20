@@ -6,14 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Calendar View Controller-->
         <scene sceneID="w0I-TU-Sum">
             <objects>
-                <viewController id="0RI-MS-fPp" sceneMemberID="viewController">
+                <viewController id="0RI-MS-fPp" customClass="CalendarViewController" customModule="Deatz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hsH-f0-MFQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,30 +27,25 @@
             </objects>
             <point key="canvasLocation" x="1350.7246376811595" y="-1765.1785714285713"/>
         </scene>
-        <!--View Controller-->
+        <!--Home Screen View Controller-->
         <scene sceneID="gOP-y8-iDP">
             <objects>
-                <viewController id="1C4-Nj-2Ba" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VHp-SI-QGb">
+                <viewController id="1C4-Nj-2Ba" customClass="HomeScreenViewController" customModule="Deatz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Z1-cm-6eE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Screen " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pud-Tv-p45">
-                                <rect key="frame" x="156" y="433" width="102" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="aKx-b7-CVN"/>
+                        <viewLayoutGuide key="safeArea" id="Hf8-fG-mX9"/>
                     </view>
                     <navigationItem key="navigationItem" id="6Pv-FX-i4M"/>
+                    <connections>
+                        <outlet property="findLabel" destination="qVt-tF-8yH" id="Afu-uQ-MxO"/>
+                        <outlet property="searchTextField" destination="ykQ-uH-nFP" id="iLb-sD-HlW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjR-UV-b5O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1350.7246376811595" y="-2468.3035714285711"/>
+            <point key="canvasLocation" x="1398.5507246376812" y="-2468.3035714285711"/>
         </scene>
         <!--Nav Bar-->
         <scene sceneID="sfO-a6-HzY">
@@ -72,26 +68,67 @@
             </objects>
             <point key="canvasLocation" x="-597" y="-1818"/>
         </scene>
-        <!--View Controller-->
+        <!--Search View Controller-->
         <scene sceneID="M8E-0A-Iap">
             <objects>
-                <viewController id="VvQ-hk-p3W" sceneMemberID="viewController">
+                <viewController id="VvQ-hk-p3W" customClass="SearchViewController" customModule="Deatz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JOk-v8-5PP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Search by name, cuisine or area .... " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="ykQ-uH-nFP">
+                                <rect key="frame" x="32" y="180" width="313" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6f-tv-xW6">
+                                <rect key="frame" x="349" y="173" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="searchsel"/>
+                                <connections>
+                                    <action selector="searchButton:" destination="VvQ-hk-p3W" eventType="touchUpInside" id="hLK-qZ-K6e"/>
+                                    <action selector="searchButton:" destination="1C4-Nj-2Ba" eventType="touchUpInside" id="kSB-Gu-Ntl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVt-tF-8yH">
+                                <rect key="frame" x="32" y="125" width="78" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SFT-cI-fHg">
+                                <rect key="frame" x="32" y="275" width="346" height="508"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Popular filtered options nearby: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVO-De-7WJ">
+                                <rect key="frame" x="32" y="234" width="256" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="DXK-qQ-Fm8"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qp2-p0-TCh"/>
+                    <connections>
+                        <outlet property="findLabel" destination="qVt-tF-8yH" id="5Or-Nr-25J"/>
+                        <outlet property="searchTextField" destination="ykQ-uH-nFP" id="r4U-3u-GOv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hhd-rR-buh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1350.7246376811595" y="-1070.0892857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Groups View Controller-->
         <scene sceneID="EfH-gt-QqZ">
             <objects>
-                <viewController id="K32-mT-Ifh" sceneMemberID="viewController">
+                <viewController id="K32-mT-Ifh" customClass="GroupsViewController" customModule="Deatz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sYV-7y-Uir">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="1350.7246376811595" y="-352.23214285714283"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="r8Q-rT-xQI">
             <objects>
-                <viewController id="PHQ-s6-uAe" sceneMemberID="viewController">
+                <viewController id="PHQ-s6-uAe" customClass="ProfileViewController" customModule="Deatz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gkR-LB-qkJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,12 +160,13 @@
         <!--Item 1-->
         <scene sceneID="9vZ-ln-rNc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RwS-Wn-I50" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RwS-Wn-I50" customClass="NavController" customModule="Deatz" customModuleProvider="target" colorLabel="IBBuiltInLabel-Orange" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item 1" id="f16-rF-H5o"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="grF-73-tVp">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="PurpleColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -216,4 +254,10 @@
             <point key="canvasLocation" x="444.92753623188412" y="394.41964285714283"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="searchsel" width="45" height="45"/>
+        <namedColor name="PurpleColor">
+            <color red="0.71799999475479126" green="0.50999999046325684" blue="0.9179999828338623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

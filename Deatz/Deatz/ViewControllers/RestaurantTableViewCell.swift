@@ -16,6 +16,7 @@ class RestaurantTableViewCell: UITableViewCell {
     @IBOutlet weak var arrowLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var starsLabel: UILabel!
+    @IBOutlet weak var starImage: UIImageView!
     
     
     

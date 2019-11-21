@@ -152,6 +152,10 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JTd-AI-GQh">
+                                                    <rect key="frame" x="233" y="38" width="24" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                             <color key="tintColor" name="PurpleColor"/>
                                         </tableViewCellContentView>
@@ -162,6 +166,7 @@
                                             <outlet property="iconImage" destination="b2x-kv-4Ja" id="CMv-MV-5U2"/>
                                             <outlet property="nameLabel" destination="Uaa-Su-lMc" id="ngQ-KU-RUI"/>
                                             <outlet property="priceLabel" destination="PaH-qZ-hv1" id="H9d-b7-heo"/>
+                                            <outlet property="starImage" destination="JTd-AI-GQh" id="A0x-b1-Pw0"/>
                                             <outlet property="starsLabel" destination="WST-OT-0bJ" id="OiO-Cs-4Gd"/>
                                             <segue destination="LqK-EB-alW" kind="show" id="nXh-7P-vgR"/>
                                         </connections>
@@ -172,12 +177,25 @@
                                     <outlet property="delegate" destination="VvQ-hk-p3W" id="ZzK-eg-daa"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBh-kh-Byy">
+                                <rect key="frame" x="160" y="754" width="94" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Filter">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="filterFunction:" destination="VvQ-hk-p3W" eventType="touchUpInside" id="qNZ-aQ-Xtg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="DXK-qQ-Fm8"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qp2-p0-TCh"/>
                     <connections>
+                        <outlet property="filterButton" destination="FBh-kh-Byy" id="cyL-we-XGo"/>
                         <outlet property="findLabel" destination="qVt-tF-8yH" id="5Or-Nr-25J"/>
                         <outlet property="searchTextField" destination="ykQ-uH-nFP" id="r4U-3u-GOv"/>
                         <outlet property="tableView" destination="H4z-XH-qTf" id="vuT-yc-Oxm"/>

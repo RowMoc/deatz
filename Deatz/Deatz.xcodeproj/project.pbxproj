@@ -19,6 +19,7 @@
 		C1F21B9D238510B600090A78 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F21B9C238510B600090A78 /* GroupsViewController.swift */; };
 		C1F21B9F23851E8C00090A78 /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F21B9E23851E8C00090A78 /* NavBar.swift */; };
 		C1F21BA12385399800090A78 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F21BA02385399800090A78 /* NavController.swift */; };
+		C1F21BA92386102100090A78 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F21BA82386102100090A78 /* RestaurantTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C1F21B9C238510B600090A78 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		C1F21B9E23851E8C00090A78 /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 		C1F21BA02385399800090A78 /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
+		C1F21BA82386102100090A78 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RestaurantTableViewCell.swift; path = ViewControllers/RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			children = (
 				C14086722384CC950040934E /* ViewControllers */,
 				204AA739237CDF0D00ADFC11 /* AppDelegate.swift */,
+				C1F21BA82386102100090A78 /* RestaurantTableViewCell.swift */,
 				C1F21BA02385399800090A78 /* NavController.swift */,
 				204AA73F237CDF0D00ADFC11 /* Main.storyboard */,
 				C1F21B9E23851E8C00090A78 /* NavBar.swift */,
@@ -172,6 +175,7 @@
 				204AA757237CE29200ADFC11 /* SearchViewController.swift in Sources */,
 				204AA75B237CE2B800ADFC11 /* CalendarViewController.swift in Sources */,
 				204AA753237CE22D00ADFC11 /* ProfileViewController.swift in Sources */,
+				C1F21BA92386102100090A78 /* RestaurantTableViewCell.swift in Sources */,
 				C1F21BA12385399800090A78 /* NavController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

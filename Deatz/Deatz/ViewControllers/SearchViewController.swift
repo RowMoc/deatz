@@ -8,22 +8,50 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
-//properties
-    @IBOutlet weak var findLabel: UILabel!
-    
-    @IBOutlet weak var searchTextField: UITextField!
+class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
     
 
+    
+//properties
+    let restaurantNames = [("sweetgreen"), ("terun"), ("deatz")]
+    @IBOutlet weak var findLabel: UILabel!
+    @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
-        // Do any additional setup after loading the view.
-    }
 
+    }
+    override func didReceiveMemoryWarning() {
+        
+        super.didReceiveMemoryWarning()
+        
+        // Dispose of any resources that can be recreated.
+        
+    }
     @IBAction func searchButton(_ sender: UIButton) {
     }
     
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return restaurantNames.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell=tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RestaurantTableViewCell
+        
+        let name = restaurantNames[indexPath .row]
+        
+        cell.nameLabel.text=name
+        cell.iconImage.image = UIImage(named: "homeicon")
+        
+        return cell
+    }
     /*
     // MARK: - Navigation
 
@@ -35,3 +63,7 @@ class SearchViewController: UIViewController {
     */
 
 }
+
+
+
+

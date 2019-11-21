@@ -52,7 +52,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.iconImage.image = image
         cell.iconImage.layer.cornerRadius = 35
         cell.arrowLabel.text = ">"
-        
         return cell
     }
     /*

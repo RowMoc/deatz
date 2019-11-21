@@ -113,7 +113,7 @@
                                 <color key="separatorColor" name="PurpleColor"/>
                                 <color key="sectionIndexBackgroundColor" name="PurpleColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="85" id="x7Z-u7-wsp" customClass="RestaurantTableViewCell" customModule="Deatz" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="85" id="x7Z-u7-wsp" customClass="RestaurantTableViewCell" customModule="Deatz" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55.5" width="414" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x7Z-u7-wsp" id="kgt-tz-nls" customClass="RestaurantTableViewCell" customModule="Deatz" customModuleProvider="target">
@@ -138,14 +138,31 @@
                                                     <color key="textColor" name="PurpleColor"/>
                                                     <color key="highlightedColor" name="PurpleColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$$$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaH-qZ-hv1">
+                                                    <rect key="frame" x="307" y="40" width="32" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WST-OT-0bJ">
+                                                    <rect key="frame" x="261" y="40" width="25" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="tintColor" name="PurpleColor"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <outlet property="arrowLabel" destination="e6T-SK-x3k" id="Efs-cJ-a43"/>
                                             <outlet property="iconImage" destination="b2x-kv-4Ja" id="CMv-MV-5U2"/>
                                             <outlet property="nameLabel" destination="Uaa-Su-lMc" id="ngQ-KU-RUI"/>
+                                            <outlet property="priceLabel" destination="PaH-qZ-hv1" id="H9d-b7-heo"/>
+                                            <outlet property="starsLabel" destination="WST-OT-0bJ" id="OiO-Cs-4Gd"/>
                                             <segue destination="LqK-EB-alW" kind="show" id="nXh-7P-vgR"/>
                                         </connections>
                                     </tableViewCell>
@@ -163,6 +180,7 @@
                     <connections>
                         <outlet property="findLabel" destination="qVt-tF-8yH" id="5Or-Nr-25J"/>
                         <outlet property="searchTextField" destination="ykQ-uH-nFP" id="r4U-3u-GOv"/>
+                        <outlet property="tableView" destination="H4z-XH-qTf" id="vuT-yc-Oxm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hhd-rR-buh" userLabel="First Responder" sceneMemberID="firstResponder"/>

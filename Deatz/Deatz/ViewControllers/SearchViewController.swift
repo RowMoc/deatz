@@ -14,7 +14,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     
 //properties
-    let restaurantNames = [("sweetgreen"), ("terun"), ("deatz")]
+    let restaurantNames = [("sweetgreen"), ("Terun"), ("Orens Hummus"), ("Ramen Nagi")]
+    let restaurantImages = [(UIImage(named: "sg")), (UIImage(named: "terun")), (UIImage(named: "orenshummus-1")), (UIImage(named: "ramenagi")),  ]
     @IBOutlet weak var findLabel: UILabel!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
@@ -46,10 +47,11 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell=tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RestaurantTableViewCell
         
         let name = restaurantNames[indexPath .row]
-        
+        let image = restaurantImages[indexPath .row]
         cell.nameLabel.text=name
-        cell.iconImage.image = UIImage(named: "sweetgreenlogo")
+        cell.iconImage.image = image
         cell.iconImage.layer.cornerRadius = 35
+        cell.arrowLabel.text = ">"
         
         return cell
     }

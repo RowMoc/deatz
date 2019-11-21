@@ -20,7 +20,6 @@
 		C1F21B9F23851E8C00090A78 /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F21B9E23851E8C00090A78 /* NavBar.swift */; };
 		C1F21BA12385399800090A78 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F21BA02385399800090A78 /* NavController.swift */; };
 		C1F21BA92386102100090A78 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F21BA82386102100090A78 /* RestaurantTableViewCell.swift */; };
-		C1F21BAB23863CC400090A78 /* sweetgreenlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C1F21BAA23863CC400090A78 /* sweetgreenlogo.png */; };
 		C1F21BAD23863F5400090A78 /* RestaurantPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F21BAC23863F5400090A78 /* RestaurantPageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +39,6 @@
 		C1F21B9E23851E8C00090A78 /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 		C1F21BA02385399800090A78 /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
 		C1F21BA82386102100090A78 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RestaurantTableViewCell.swift; path = ViewControllers/RestaurantTableViewCell.swift; sourceTree = "<group>"; };
-		C1F21BAA23863CC400090A78 /* sweetgreenlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sweetgreenlogo.png; sourceTree = "<group>"; };
 		C1F21BAC23863F5400090A78 /* RestaurantPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,7 +79,6 @@
 				204AA73F237CDF0D00ADFC11 /* Main.storyboard */,
 				C1F21B9E23851E8C00090A78 /* NavBar.swift */,
 				204AA742237CDF0E00ADFC11 /* Assets.xcassets */,
-				C1F21BAA23863CC400090A78 /* sweetgreenlogo.png */,
 				204AA744237CDF0E00ADFC11 /* LaunchScreen.storyboard */,
 				204AA747237CDF0E00ADFC11 /* Info.plist */,
 				C14086752384CF6B0040934E /* deatz.png */,
@@ -164,7 +161,6 @@
 				204AA743237CDF0E00ADFC11 /* Assets.xcassets in Resources */,
 				204AA741237CDF0D00ADFC11 /* Main.storyboard in Resources */,
 				C14086762384CF6B0040934E /* deatz.png in Resources */,
-				C1F21BAB23863CC400090A78 /* sweetgreenlogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

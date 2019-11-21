@@ -159,10 +159,10 @@
             </objects>
             <point key="canvasLocation" x="1350.7246376811595" y="-1070.0892857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Restaurant Page View Controller-->
         <scene sceneID="Ee2-fz-LDi">
             <objects>
-                <viewController id="LqK-EB-alW" sceneMemberID="viewController">
+                <viewController id="LqK-EB-alW" customClass="RestaurantPageViewController" customModule="Deatz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RET-PV-4Mi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

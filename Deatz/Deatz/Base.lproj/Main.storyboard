@@ -120,13 +120,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b2x-kv-4Ja">
-                                                    <rect key="frame" x="7" y="4" width="85" height="75"/>
+                                                    <rect key="frame" x="4" y="4" width="85" height="75"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uaa-Su-lMc">
                                                     <rect key="frame" x="100" y="17" width="255" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -136,6 +136,7 @@
                                         <connections>
                                             <outlet property="iconImage" destination="b2x-kv-4Ja" id="CMv-MV-5U2"/>
                                             <outlet property="nameLabel" destination="Uaa-Su-lMc" id="ngQ-KU-RUI"/>
+                                            <segue destination="LqK-EB-alW" kind="show" id="nXh-7P-vgR"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -157,6 +158,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hhd-rR-buh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1350.7246376811595" y="-1070.0892857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ee2-fz-LDi">
+            <objects>
+                <viewController id="LqK-EB-alW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RET-PV-4Mi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="PurpleColor"/>
+                        <viewLayoutGuide key="safeArea" id="gZc-md-K9N"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGh-uK-924" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2203" y="-1070"/>
         </scene>
         <!--Groups View Controller-->
         <scene sceneID="EfH-gt-QqZ">
@@ -246,7 +263,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QeF-Yb-QoO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="440.57971014492756" y="-1070.0892857142856"/>
+            <point key="canvasLocation" x="522" y="-1070"/>
         </scene>
         <!--Item-->
         <scene sceneID="LYT-G8-zsJ">

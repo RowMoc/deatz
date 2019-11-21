@@ -48,7 +48,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let name = restaurantNames[indexPath .row]
         
         cell.nameLabel.text=name
-        cell.iconImage.image = UIImage(named: "homeicon")
+        cell.iconImage.image = UIImage(named: "sweetgreenlogo")
+        cell.iconImage.layer.cornerRadius = 35
         
         return cell
     }

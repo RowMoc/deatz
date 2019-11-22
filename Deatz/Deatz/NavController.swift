@@ -12,7 +12,11 @@ class NavController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.viewControllers.removeAll()
+        let initialView = self.storyboard?.instantiateViewController(withIdentifier: "calendar") as! CalendarViewController
+        let customViewControllersArray : NSArray = [initialView]
+        self.navigationController?.viewControllers = customViewControllersArray as! [UIViewController]
+        self.navigationController?.viewControllers = [self]
         // Do any additional setup after loading the view.
     }
     

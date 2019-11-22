@@ -18,6 +18,8 @@ class RestaurantTableViewCell: UITableViewCell {
     @IBOutlet weak var starsLabel: UILabel!
     @IBOutlet weak var starImage: UIImageView!
     
+    @IBOutlet weak var optionsImage: UIImageView!
+    @IBOutlet weak var optionsLabel: UILabel!
     
     
     override func awakeFromNib() {

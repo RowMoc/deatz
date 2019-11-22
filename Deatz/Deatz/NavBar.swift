@@ -1,11 +1,12 @@
 import UIKit
 
-class NavBar: UITabBarController {
+class NavBar: UITabBarController, UITabBarControllerDelegate {
     
     var tabBarIteam = UITabBarItem()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.delegate = self
         
         let homeImage = UIImage(named: "homeicon")?.withRenderingMode(.alwaysOriginal)
         tabBarIteam = (self.tabBar.items?[0])!
@@ -45,6 +46,16 @@ class NavBar: UITabBarController {
         
         // initaial tab bar index
         self.selectedIndex = 0
+        restorationIdentifier = nil
+        
+    }
+    // UITabBarDelegate
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        print("Selected item")
+    }
+    
+    // UITabBarControllerDelegate
+    func tabBarController(tabBarController: UITabBarController, didSelectViewController viewController: UIViewController) {
         
     }
     
@@ -52,6 +63,7 @@ class NavBar: UITabBarController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 }
 
 extension UIImage {

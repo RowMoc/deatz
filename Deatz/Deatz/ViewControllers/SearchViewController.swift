@@ -24,6 +24,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     let restaurantImages = [(UIImage(named: "sg")),(UIImage(named: "bare")), (UIImage(named: "terun")), (UIImage(named: "orenshummus-1")), (UIImage(named: "ramenagi")), (UIImage(named: "saltandstraw")), (UIImage(named: "asianbox"))]
     let restaurantRatings = [("4.5"), ("3.2"), ("3.1"),("5.0"), ("3.6"),("5.0"),("4.3")]
     let restaurantPrices = [("$"),("$$"), ("$$$"), ("$$"), ("$$"), ("$"),("$$")]
+    let restaurantOptions = [("8 options"),("2 options"), ("1 option"), ("4 options"), ("3 options"), ("2 options"),("9 options")]
     @IBOutlet weak var findLabel: UILabel!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
@@ -97,10 +98,11 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.iconImage.image = image
         cell.iconImage.layer.cornerRadius = 35
         cell.arrowLabel.text = ">"
-        cell.starImage.image = UIImage(named: "star")
+        cell.starImage.image = UIImage(named: "star_outline_icon")
         cell.starsLabel.text = restaurantRatings[indexPath .row]
         cell.priceLabel.text = restaurantPrices[indexPath .row]
-        
+        cell.optionsImage.image = UIImage(named:"vegan")
+        cell.optionsLabel.text = restaurantOptions[indexPath .row]
         return cell
     }
 

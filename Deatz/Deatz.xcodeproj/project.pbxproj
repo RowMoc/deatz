@@ -16,6 +16,7 @@
 		204AA75B237CE2B800ADFC11 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204AA759237CE2B800ADFC11 /* CalendarViewController.swift */; };
 		204AA75F237CE2CB00ADFC11 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204AA75D237CE2CB00ADFC11 /* HomeScreenViewController.swift */; };
 		C14086762384CF6B0040934E /* deatz.png in Resources */ = {isa = PBXBuildFile; fileRef = C14086752384CF6B0040934E /* deatz.png */; };
+		C1B0899E2387F4E900242C01 /* MyMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B0899D2387F4E900242C01 /* MyMenuViewController.swift */; };
 		C1F21B9D238510B600090A78 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F21B9C238510B600090A78 /* GroupsViewController.swift */; };
 		C1F21B9F23851E8C00090A78 /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F21B9E23851E8C00090A78 /* NavBar.swift */; };
 		C1F21BA12385399800090A78 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F21BA02385399800090A78 /* NavController.swift */; };
@@ -37,6 +38,7 @@
 		204AA759237CE2B800ADFC11 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		204AA75D237CE2CB00ADFC11 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		C14086752384CF6B0040934E /* deatz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deatz.png; sourceTree = "<group>"; };
+		C1B0899D2387F4E900242C01 /* MyMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyMenuViewController.swift; path = ../MyMenuViewController.swift; sourceTree = "<group>"; };
 		C1F21B9C238510B600090A78 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		C1F21B9E23851E8C00090A78 /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 		C1F21BA02385399800090A78 /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				204AA73F237CDF0D00ADFC11 /* Main.storyboard */,
 				C1F21B9E23851E8C00090A78 /* NavBar.swift */,
 				C1F21BB62387986D00090A78 /* PopUpViewController.swift */,
+				C1B0899D2387F4E900242C01 /* MyMenuViewController.swift */,
 				204AA742237CDF0E00ADFC11 /* Assets.xcassets */,
 				C1F21BB22386576600090A78 /* star.png */,
 				204AA744237CDF0E00ADFC11 /* LaunchScreen.storyboard */,
@@ -181,6 +184,7 @@
 				C1F21B9D238510B600090A78 /* GroupsViewController.swift in Sources */,
 				C1F21B9F23851E8C00090A78 /* NavBar.swift in Sources */,
 				204AA75F237CE2CB00ADFC11 /* HomeScreenViewController.swift in Sources */,
+				C1B0899E2387F4E900242C01 /* MyMenuViewController.swift in Sources */,
 				C1F21BB72387986D00090A78 /* PopUpViewController.swift in Sources */,
 				204AA73A237CDF0D00ADFC11 /* AppDelegate.swift in Sources */,
 				204AA757237CE29200ADFC11 /* SearchViewController.swift in Sources */,

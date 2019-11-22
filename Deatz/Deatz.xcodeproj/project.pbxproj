@@ -22,6 +22,7 @@
 		C1F21BA92386102100090A78 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F21BA82386102100090A78 /* RestaurantTableViewCell.swift */; };
 		C1F21BAD23863F5400090A78 /* RestaurantPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F21BAC23863F5400090A78 /* RestaurantPageViewController.swift */; };
 		C1F21BB32386576600090A78 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = C1F21BB22386576600090A78 /* star.png */; };
+		C1F21BB72387986D00090A78 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F21BB62387986D00090A78 /* PopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		C1F21BA82386102100090A78 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RestaurantTableViewCell.swift; path = ViewControllers/RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		C1F21BAC23863F5400090A78 /* RestaurantPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPageViewController.swift; sourceTree = "<group>"; };
 		C1F21BB22386576600090A78 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		C1F21BB62387986D00090A78 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				C1F21BA02385399800090A78 /* NavController.swift */,
 				204AA73F237CDF0D00ADFC11 /* Main.storyboard */,
 				C1F21B9E23851E8C00090A78 /* NavBar.swift */,
+				C1F21BB62387986D00090A78 /* PopUpViewController.swift */,
 				204AA742237CDF0E00ADFC11 /* Assets.xcassets */,
 				C1F21BB22386576600090A78 /* star.png */,
 				204AA744237CDF0E00ADFC11 /* LaunchScreen.storyboard */,
@@ -178,6 +181,7 @@
 				C1F21B9D238510B600090A78 /* GroupsViewController.swift in Sources */,
 				C1F21B9F23851E8C00090A78 /* NavBar.swift in Sources */,
 				204AA75F237CE2CB00ADFC11 /* HomeScreenViewController.swift in Sources */,
+				C1F21BB72387986D00090A78 /* PopUpViewController.swift in Sources */,
 				204AA73A237CDF0D00ADFC11 /* AppDelegate.swift in Sources */,
 				204AA757237CE29200ADFC11 /* SearchViewController.swift in Sources */,
 				204AA75B237CE2B800ADFC11 /* CalendarViewController.swift in Sources */,

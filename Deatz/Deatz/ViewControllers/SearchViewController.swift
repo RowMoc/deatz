@@ -27,19 +27,16 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var findLabel: UILabel!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var filterButton: UIButton!
     @IBAction func filterFunction(_ sender: UIButton) {
     }
-    
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         filterButton.layer.borderWidth = 1
-        //filterButton.layer.borderColor = UIColorFromRGB(rgbValue: 0xB782EA).cgColor
-        filterButton.layer.borderColor = UIColor.black as! CGColor
+        filterButton.layer.borderColor = UIColorFromRGB(rgbValue: 0xB782EA).cgColor
+        //filterButton.layer.borderColor = UIColor.black as! CGColor
         filterButton.layer.cornerRadius = 7
 
 
@@ -89,7 +86,5 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     */
 
 }
-
-
 
 

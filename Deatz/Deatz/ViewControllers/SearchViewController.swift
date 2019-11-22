@@ -28,6 +28,12 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var filterButton: UIButton!
+    @IBOutlet weak var cuisinePref: UITextField!
+    @IBOutlet weak var popUP: UIView!
+    @IBOutlet weak var greyOout: UIView!
+    @IBOutlet weak var existingRestrictions: UILabel!
+    @IBOutlet weak var dietaryField: UITextField!
+    @IBOutlet weak var existingPreferences: UILabel!
     @IBAction func filterFunction(_ sender: UIButton) {
     }
     
@@ -38,14 +44,37 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         filterButton.layer.borderColor = UIColorFromRGB(rgbValue: 0xB782EA).cgColor
         //filterButton.layer.borderColor = UIColor.black as! CGColor
         filterButton.layer.cornerRadius = 7
-
-
+        popUP.isHidden = true
+        popUP.layer.cornerRadius = 15
+        greyOout.isHidden = true
+        existingRestrictions.text = "Existing Restrictions: Vegan"
+        existingPreferences.text = "Existing Preferences: Mexican"
+        var frame = CGRect.zero
+        frame.size.height = .leastNormalMagnitude
+        tableView.tableHeaderView = UIView(frame: frame)
+    }
+    @IBAction func addRestriction(_ sender: UIButton) {
+        existingRestrictions.text = existingRestrictions.text! + ", " + dietaryField.text!
+        dietaryField.text = ""
+    }
+    @IBAction func addPreferences(_ sender: Any) {
+        existingPreferences.text = existingPreferences.text! + ", " + cuisinePref.text!
+        cuisinePref.text = ""
     }
     override func didReceiveMemoryWarning() {
         
         super.didReceiveMemoryWarning()
         
         // Dispose of any resources that can be recreated.
+        
+    }
+    @IBAction func closePopUP(_ sender: UIButton) {
+        popUP.isHidden = true
+        greyOout.isHidden = true
+    }
+    @IBAction func filterButton(_ sender: UIButton) {
+        popUP.isHidden = false
+        greyOout.isHidden = false
         
     }
     @IBAction func searchButton(_ sender: UIButton) {

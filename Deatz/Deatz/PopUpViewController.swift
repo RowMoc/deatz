@@ -10,16 +10,13 @@ import UIKit
 
 class PopUpViewController: UIViewController {
 
-    @IBOutlet weak var but4: UIButton!
-    @IBOutlet weak var but3: UIButton!
-    @IBOutlet weak var but2: UIButton!
-    @IBOutlet weak var but1: UIButton!
     
     @IBOutlet weak var popUpView: UIView!
     @IBOutlet weak var existingRestrictions: UILabel!
     @IBOutlet weak var cuisinePreferences: UITextField!
     @IBOutlet weak var existingPreferences: UILabel!
     @IBOutlet weak var dietaryField: UITextField!
+    
     @IBAction func changeRestrictions(_ sender: UIButton) {
         existingRestrictions.text = existingRestrictions.text! + ", " + dietaryField.text!
         dietaryField.text = ""

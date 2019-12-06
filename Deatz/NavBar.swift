@@ -26,7 +26,7 @@ class NavBar: UITabBarController, UITabBarControllerDelegate {
         let groupsImage = UIImage(named: "groups_unselected")?.withRenderingMode(.alwaysOriginal)
         tabBarIteam = (self.tabBar.items?[3])!
         tabBarIteam.image = groupsImage
-        tabBarIteam.selectedImage = UIImage(named: "group_selected")?.withRenderingMode(.alwaysOriginal)
+        tabBarIteam.selectedImage = UIImage(named: "groups_selected")?.withRenderingMode(.alwaysOriginal)
         
         let profileImage = UIImage(named: "profile_unselected")?.withRenderingMode(.alwaysOriginal)
         tabBarIteam = (self.tabBar.items?[4])!

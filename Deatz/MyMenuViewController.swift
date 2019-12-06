@@ -17,15 +17,36 @@ class MyMenuViewController: UIViewController {
     @IBOutlet weak var d2: UIButton!
     @IBOutlet weak var d1: UIButton!
     
+    @IBOutlet weak var image: UIImageView!
+    
+    @IBOutlet weak var label6: UILabel!
+    @IBOutlet weak var label5: UILabel!
+    @IBOutlet weak var label4: UILabel!
+    @IBOutlet weak var label3: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var greyOut: UIView!
     @IBOutlet weak var menuItem: UIView!
     override func viewDidLoad() {
-        d1.layer.cornerRadius = 10
-        d2.layer.cornerRadius = 10
-        d3.layer.cornerRadius = 10
-        d4.layer.cornerRadius = 10
-        d5.layer.cornerRadius = 10
-        d6.layer.cornerRadius = 10
+        d1.roundedButton()
+        d2.roundedButton()
+        d3.roundedButton()
+        d4.roundedButton()
+        d5.roundedButton()
+        d6.roundedButton()
+        image.layer.cornerRadius = 10
+        label1.clipsToBounds = true
+        label2.clipsToBounds = true
+        label3.clipsToBounds = true
+        label4.clipsToBounds = true
+        label5.clipsToBounds = true
+        label6.clipsToBounds = true 
+        label1.layer.cornerRadius = 10
+        label2.layer.cornerRadius = 10
+        label3.layer.cornerRadius = 10
+        label4.layer.cornerRadius = 10
+        label5.layer.cornerRadius = 10
+        label6.layer.cornerRadius = 10
         greyOut.isHidden = true
         menuItem.isHidden = true
         menuItem.layer.cornerRadius = 15

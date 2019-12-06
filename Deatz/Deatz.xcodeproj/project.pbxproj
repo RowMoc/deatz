@@ -3,19 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B1F85B8CD9EE649336710A5 /* Pods_Deatz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A7EDF6F159261620BACC08 /* Pods_Deatz.framework */; };
 		204AA73A237CDF0D00ADFC11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204AA739237CDF0D00ADFC11 /* AppDelegate.swift */; };
 		204AA741237CDF0D00ADFC11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204AA73F237CDF0D00ADFC11 /* Main.storyboard */; };
 		204AA743237CDF0E00ADFC11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 204AA742237CDF0E00ADFC11 /* Assets.xcassets */; };
 		204AA746237CDF0E00ADFC11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204AA744237CDF0E00ADFC11 /* LaunchScreen.storyboard */; };
 		204AA753237CE22D00ADFC11 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204AA751237CE22D00ADFC11 /* ProfileViewController.swift */; };
 		204AA757237CE29200ADFC11 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204AA755237CE29200ADFC11 /* SearchViewController.swift */; };
-		204AA75B237CE2B800ADFC11 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204AA759237CE2B800ADFC11 /* CalendarViewController.swift */; };
 		204AA75F237CE2CB00ADFC11 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204AA75D237CE2CB00ADFC11 /* HomeScreenViewController.swift */; };
+		C1398030239B0042002B7DC0 /* addPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C139802F239B0042002B7DC0 /* addPeopleViewController.swift */; };
 		C14086762384CF6B0040934E /* deatz.png in Resources */ = {isa = PBXBuildFile; fileRef = C14086752384CF6B0040934E /* deatz.png */; };
+		C1776322239A5F6200006A6B /* toRoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1776321239A5F6200006A6B /* toRoundViewController.swift */; };
+		C1776326239A636400006A6B /* EventsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1776325239A636400006A6B /* EventsListViewController.swift */; };
+		C1776328239A63C700006A6B /* singleEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1776327239A63C700006A6B /* singleEventViewController.swift */; };
+		C17AC8C7239A701B0093C16D /* MakeGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AC8C6239A701B0093C16D /* MakeGroupViewController.swift */; };
+		C17AC8C9239A736A0093C16D /* createEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AC8C8239A736A0093C16D /* createEventViewController.swift */; };
+		C17AC8CB239A75140093C16D /* RestaurantProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AC8CA239A75140093C16D /* RestaurantProfileViewController.swift */; };
+		C17AC8CD239A76A00093C16D /* WriteReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AC8CC239A76A00093C16D /* WriteReviewViewController.swift */; };
+		C17AC8D1239A89760093C16D /* DisplayGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AC8D0239A89760093C16D /* DisplayGroupsViewController.swift */; };
+		C17AC8E0239A91FD0093C16D /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C17AC8D2239A91F80093C16D /* Nunito-Regular.ttf */; };
+		C18F5DD82398D7D200B9D12E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C18F5DD72398D7D200B9D12E /* Colors.xcassets */; };
 		C1B0899E2387F4E900242C01 /* MyMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B0899D2387F4E900242C01 /* MyMenuViewController.swift */; };
 		C1F21B9D238510B600090A78 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F21B9C238510B600090A78 /* GroupsViewController.swift */; };
 		C1F21B9F23851E8C00090A78 /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F21B9E23851E8C00090A78 /* NavBar.swift */; };
@@ -35,10 +46,26 @@
 		204AA747237CDF0E00ADFC11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		204AA751237CE22D00ADFC11 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		204AA755237CE29200ADFC11 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		204AA759237CE2B800ADFC11 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		204AA75D237CE2CB00ADFC11 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		806EC4A5D170456679A383EB /* Pods-Deatz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deatz.release.xcconfig"; path = "Target Support Files/Pods-Deatz/Pods-Deatz.release.xcconfig"; sourceTree = "<group>"; };
+		81A7EDF6F159261620BACC08 /* Pods_Deatz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Deatz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A196CD020E1DE4AE2B64C3D2 /* Pods-Deatz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deatz.debug.xcconfig"; path = "Target Support Files/Pods-Deatz/Pods-Deatz.debug.xcconfig"; sourceTree = "<group>"; };
+		C139802F239B0042002B7DC0 /* addPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPeopleViewController.swift; sourceTree = "<group>"; };
 		C14086752384CF6B0040934E /* deatz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deatz.png; sourceTree = "<group>"; };
+		C1776321239A5F6200006A6B /* toRoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toRoundViewController.swift; sourceTree = "<group>"; };
+		C1776325239A636400006A6B /* EventsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListViewController.swift; sourceTree = "<group>"; };
+		C1776327239A63C700006A6B /* singleEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singleEventViewController.swift; sourceTree = "<group>"; };
+		C17AC8C6239A701B0093C16D /* MakeGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeGroupViewController.swift; sourceTree = "<group>"; };
+		C17AC8C8239A736A0093C16D /* createEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createEventViewController.swift; sourceTree = "<group>"; };
+		C17AC8CA239A75140093C16D /* RestaurantProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantProfileViewController.swift; sourceTree = "<group>"; };
+		C17AC8CC239A76A00093C16D /* WriteReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteReviewViewController.swift; sourceTree = "<group>"; };
+		C17AC8D0239A89760093C16D /* DisplayGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayGroupsViewController.swift; sourceTree = "<group>"; };
+		C17AC8D2239A91F80093C16D /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		C18F5DD72398D7D200B9D12E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		C1B0899D2387F4E900242C01 /* MyMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyMenuViewController.swift; path = ../MyMenuViewController.swift; sourceTree = "<group>"; };
+		C1F1DCAC239AF1CA007ECE48 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		C1F1DCAD239AF1D2007ECE48 /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		C1F1DCAE239AF1DA007ECE48 /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
 		C1F21B9C238510B600090A78 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		C1F21B9E23851E8C00090A78 /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 		C1F21BA02385399800090A78 /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
@@ -53,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B1F85B8CD9EE649336710A5 /* Pods_Deatz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +91,10 @@
 			isa = PBXGroup;
 			children = (
 				204AA738237CDF0D00ADFC11 /* Deatz */,
+				C1F21B9E23851E8C00090A78 /* NavBar.swift */,
 				204AA737237CDF0D00ADFC11 /* Products */,
+				9968E149F56923B268E71641 /* Pods */,
+				D4EE5C677DA585800B7B3ECC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,29 +114,66 @@
 				C1F21BA82386102100090A78 /* RestaurantTableViewCell.swift */,
 				C1F21BA02385399800090A78 /* NavController.swift */,
 				204AA73F237CDF0D00ADFC11 /* Main.storyboard */,
-				C1F21B9E23851E8C00090A78 /* NavBar.swift */,
+				C1776321239A5F6200006A6B /* toRoundViewController.swift */,
 				C1F21BB62387986D00090A78 /* PopUpViewController.swift */,
 				C1B0899D2387F4E900242C01 /* MyMenuViewController.swift */,
+				C17AC8D0239A89760093C16D /* DisplayGroupsViewController.swift */,
+				C17AC8EE239A92060093C16D /* fonts */,
+				C18F5DD72398D7D200B9D12E /* Colors.xcassets */,
 				204AA742237CDF0E00ADFC11 /* Assets.xcassets */,
+				C17AC8C8239A736A0093C16D /* createEventViewController.swift */,
+				204AA747237CDF0E00ADFC11 /* Info.plist */,
 				C1F21BB22386576600090A78 /* star.png */,
 				204AA744237CDF0E00ADFC11 /* LaunchScreen.storyboard */,
-				204AA747237CDF0E00ADFC11 /* Info.plist */,
+				C17AC8C6239A701B0093C16D /* MakeGroupViewController.swift */,
 				C14086752384CF6B0040934E /* deatz.png */,
 			);
 			path = Deatz;
 			sourceTree = "<group>";
 		};
+		9968E149F56923B268E71641 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A196CD020E1DE4AE2B64C3D2 /* Pods-Deatz.debug.xcconfig */,
+				806EC4A5D170456679A383EB /* Pods-Deatz.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C14086722384CC950040934E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C17AC8CA239A75140093C16D /* RestaurantProfileViewController.swift */,
+				C17AC8CC239A76A00093C16D /* WriteReviewViewController.swift */,
+				C1776325239A636400006A6B /* EventsListViewController.swift */,
+				C1776327239A63C700006A6B /* singleEventViewController.swift */,
 				204AA75D237CE2CB00ADFC11 /* HomeScreenViewController.swift */,
-				204AA759237CE2B800ADFC11 /* CalendarViewController.swift */,
 				204AA755237CE29200ADFC11 /* SearchViewController.swift */,
 				C1F21BAC23863F5400090A78 /* RestaurantPageViewController.swift */,
 				C1F21B9C238510B600090A78 /* GroupsViewController.swift */,
+				C139802F239B0042002B7DC0 /* addPeopleViewController.swift */,
 				204AA751237CE22D00ADFC11 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C17AC8EE239A92060093C16D /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C17AC8D2239A91F80093C16D /* Nunito-Regular.ttf */,
+				C1F1DCAD239AF1D2007ECE48 /* Nunito-Light.ttf */,
+				C1F1DCAE239AF1DA007ECE48 /* Nunito-Italic.ttf */,
+				C1F1DCAC239AF1CA007ECE48 /* Nunito-Bold.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		D4EE5C677DA585800B7B3ECC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81A7EDF6F159261620BACC08 /* Pods_Deatz.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 204AA74A237CDF0E00ADFC11 /* Build configuration list for PBXNativeTarget "Deatz" */;
 			buildPhases = (
+				02C342D3EEC28338BC8D5584 /* [CP] Check Pods Manifest.lock */,
 				204AA732237CDF0D00ADFC11 /* Sources */,
 				204AA733237CDF0D00ADFC11 /* Frameworks */,
 				204AA734237CDF0D00ADFC11 /* Resources */,
+				4EFD0694EEC1EEE5791F5684 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,29 +240,81 @@
 				C1F21BB32386576600090A78 /* star.png in Resources */,
 				204AA743237CDF0E00ADFC11 /* Assets.xcassets in Resources */,
 				204AA741237CDF0D00ADFC11 /* Main.storyboard in Resources */,
+				C17AC8E0239A91FD0093C16D /* Nunito-Regular.ttf in Resources */,
 				C14086762384CF6B0040934E /* deatz.png in Resources */,
+				C18F5DD82398D7D200B9D12E /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02C342D3EEC28338BC8D5584 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Deatz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EFD0694EEC1EEE5791F5684 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Deatz/Pods-Deatz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Deatz/Pods-Deatz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Deatz/Pods-Deatz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		204AA732237CDF0D00ADFC11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1776322239A5F6200006A6B /* toRoundViewController.swift in Sources */,
 				C1F21B9D238510B600090A78 /* GroupsViewController.swift in Sources */,
 				C1F21B9F23851E8C00090A78 /* NavBar.swift in Sources */,
 				204AA75F237CE2CB00ADFC11 /* HomeScreenViewController.swift in Sources */,
 				C1B0899E2387F4E900242C01 /* MyMenuViewController.swift in Sources */,
+				C1776326239A636400006A6B /* EventsListViewController.swift in Sources */,
 				C1F21BB72387986D00090A78 /* PopUpViewController.swift in Sources */,
 				204AA73A237CDF0D00ADFC11 /* AppDelegate.swift in Sources */,
 				204AA757237CE29200ADFC11 /* SearchViewController.swift in Sources */,
-				204AA75B237CE2B800ADFC11 /* CalendarViewController.swift in Sources */,
 				C1F21BAD23863F5400090A78 /* RestaurantPageViewController.swift in Sources */,
 				204AA753237CE22D00ADFC11 /* ProfileViewController.swift in Sources */,
+				C1776328239A63C700006A6B /* singleEventViewController.swift in Sources */,
+				C17AC8C7239A701B0093C16D /* MakeGroupViewController.swift in Sources */,
+				C17AC8CB239A75140093C16D /* RestaurantProfileViewController.swift in Sources */,
+				C17AC8CD239A76A00093C16D /* WriteReviewViewController.swift in Sources */,
+				C17AC8D1239A89760093C16D /* DisplayGroupsViewController.swift in Sources */,
 				C1F21BA92386102100090A78 /* RestaurantTableViewCell.swift in Sources */,
+				C1398030239B0042002B7DC0 /* addPeopleViewController.swift in Sources */,
 				C1F21BA12385399800090A78 /* NavController.swift in Sources */,
+				C17AC8C9239A736A0093C16D /* createEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,10 +458,11 @@
 		};
 		204AA74B237CDF0E00ADFC11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A196CD020E1DE4AE2B64C3D2 /* Pods-Deatz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5LCY76KH97;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Deatz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -354,10 +477,11 @@
 		};
 		204AA74C237CDF0E00ADFC11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 806EC4A5D170456679A383EB /* Pods-Deatz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5LCY76KH97;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Deatz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
